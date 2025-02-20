@@ -1,25 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import Component1 from './components/Component1'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Welcome to React</h1>
+      <p>React is a library for building UI</p>
+      <p>We created this react boilerplate using create-react-app package</p>
+
+      <Component1 />
+      
+      {/*
+        <Component1 />
+        <Component1 />
+        <Component1 />
+      */}
     </div>
-  );
+  )
 }
 
 export default App;
+
+/*
+  # Components: Building blocks of UI, which return JSX
+    - Types:
+      - Class Components: Class which renders JSX
+      - Function Components ***: Function which returns (renders) JSX
+
+  # React Developer Tools:
+    - Debug React
+*/
