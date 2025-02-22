@@ -1,30 +1,14 @@
 import './App.css';
 // import Component1 from './components/Component1'
-import Students from './components/Students'
+// import Students2 from './components/Students2'
+import ConditionalRendering from './components/ConditionalRendering'
 
 const App = () => {
   return (
     <div className="App">
-      <Students />
+      <ConditionalRendering />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      {/* <Students2 /> */}
 
       {/* <h1>Welcome to React</h1>
       <p>React is a library for building UI</p>
@@ -68,6 +52,16 @@ export default App;
         - Syntax:
           - <img></img>
           - <img />
+  
+  # Conditional Rendering
+    - Display a JSX expression based on a condition
+    - Syntax: { condition && <h1>Dummy code</h1> }
+    - Alternative Syntax:
+      let x = null
+      if(bool1) {
+        x = <h1>Test</h1>
+      }
+      {x}
 
   # React Developer Tools:
     - Debug React
