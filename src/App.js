@@ -1,12 +1,14 @@
 import './App.css';
 // import Component1 from './components/Component1'
 // import Students2 from './components/Students2'
-import ConditionalRendering from './components/ConditionalRendering'
+// import ConditionalRendering from './components/ConditionalRendering'
+import RenderingLists from './components/RenderingLists';
 
 const App = () => {
   return (
     <div className="App">
-      <ConditionalRendering />
+      <RenderingLists />
+      {/* <ConditionalRendering /> */}
 
       {/* <Students2 /> */}
 
@@ -62,6 +64,12 @@ export default App;
         x = <h1>Test</h1>
       }
       {x}
+
+  # Rendering Lists (Loop Rendering)
+    - Using map method, JSX can be rendered for the given elements in an array
+    - 'key' prop (attribute) should be added to the parent JSX element returned in the map method, and this needs to be unique for each element
+      - index value (second parameter) of map method callback can be assigned to the key prop
+      - key props helps React uniquely identify individual list JSX elements and update only those elements whenever a change is detected
 
   # React Developer Tools:
     - Debug React

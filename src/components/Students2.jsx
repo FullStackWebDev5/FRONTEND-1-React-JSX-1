@@ -30,7 +30,7 @@ const Students = () => {
           <li>Batch: {student1.batch}</li>
           <li>Total marks: {student1.marks.reduce((a, m) => a + m)}</li>
           {student1.currentCompany &&
-            <li>Current company: {student2.currentCompany}</li>}
+            <li>Current company: {student1.currentCompany}</li>}
         </ul>
       </div>
       <div>
