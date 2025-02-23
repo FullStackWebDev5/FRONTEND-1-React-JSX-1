@@ -2,12 +2,15 @@ import './App.css';
 // import Component1 from './components/Component1'
 // import Students2 from './components/Students2'
 // import ConditionalRendering from './components/ConditionalRendering'
-import RenderingLists from './components/RenderingLists';
+// import RenderingLists from './components/RenderingLists';
+import Users from './components/Users';
 
 const App = () => {
   return (
     <div className="App">
-      <RenderingLists />
+      <Users />
+
+      {/* <RenderingLists /> */}
       {/* <ConditionalRendering /> */}
 
       {/* <Students2 /> */}
@@ -71,6 +74,12 @@ export default App;
       - index value (second parameter) of map method callback can be assigned to the key prop
       - key props helps React uniquely identify individual list JSX elements and update only those elements whenever a change is detected
 
+  # Styling
+    - Styles need to be provided as an object in case of Inline and Internal styling in React.js
+    - Types:
+      - Inline styling: Styles are added to the style prop in JSX elements
+        - Syntax: <jsx style={{ textAlign: 'left' }}></jsx>
+      - Internal styling: Styles are defined in a separate object within the same file and then applied to individual JSX elements using style prop
   # React Developer Tools:
     - Debug React
 */
