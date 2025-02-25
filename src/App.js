@@ -3,12 +3,15 @@ import './App.css';
 // import Students2 from './components/Students2'
 // import ConditionalRendering from './components/ConditionalRendering'
 // import RenderingLists from './components/RenderingLists';
-import Users from './components/Users';
+// import Users from './components/Users';
+import EventHandling from './components/EventHandling';
 
 const App = () => {
   return (
     <div className="App">
-      <Users />
+      <EventHandling />
+
+      {/* <Users /> */}
 
       {/* <RenderingLists /> */}
       {/* <ConditionalRendering /> */}
@@ -57,6 +60,8 @@ export default App;
         - Syntax:
           - <img></img>
           - <img />
+      - Event handling:
+        - Syntax: <button onClick={func1}>Click</button>
   
   # Conditional Rendering
     - Display a JSX expression based on a condition
@@ -80,6 +85,7 @@ export default App;
       - Inline styling: Styles are added to the style prop in JSX elements
         - Syntax: <jsx style={{ textAlign: 'left' }}></jsx>
       - Internal styling: Styles are defined in a separate object within the same file and then applied to individual JSX elements using style prop
+      
   # React Developer Tools:
     - Debug React
 */
